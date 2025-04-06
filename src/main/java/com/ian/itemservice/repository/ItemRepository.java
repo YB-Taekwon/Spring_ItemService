@@ -20,6 +20,7 @@ public class ItemRepository {
     public Item save(Item item) {
         item.setId(++sequence);
         store.put(item.getId(), item);
+
         return item;
     }
 
@@ -31,11 +32,13 @@ public class ItemRepository {
         return new ArrayList<>(store.values());
     }
 
-    public void update(Long id, ItemDto itemDto) {
+    public Item update(Long id, ItemDto itemDto) {
         Item item = findById(id);
         item.setName(itemDto.getName());
         item.setPrice(itemDto.getPrice());
         item.setQuantity(itemDto.getQuantity());
+
+        return item;
     }
 
     public void clear() {
