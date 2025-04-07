@@ -1,5 +1,6 @@
 ## Development Environment
 - **IDE**: IntelliJ Ultimate
+
 - **Spring Initializr**
   - **Project**: Gradle
   - **Language**: Java
@@ -7,3 +8,8 @@
   - **Project Metadata**
     - **Packaging**: Jar
     - **Java**: 21
+
+- **Dependencies**
+  - Spring Web
+  - Lombok
+  - Thymeleaf
