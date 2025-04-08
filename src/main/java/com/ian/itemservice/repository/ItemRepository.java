@@ -37,6 +37,9 @@ public class ItemRepository {
         item.setName(itemDto.getName());
         item.setPrice(itemDto.getPrice());
         item.setQuantity(itemDto.getQuantity());
+        item.setOpen(itemDto.getOpen());
+        item.setItemType(itemDto.getItemType());
+        item.setDeliveryCode(itemDto.getDeliveryCode());
 
         return item;
     }
